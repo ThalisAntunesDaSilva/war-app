@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.war_app">
+    package="thalis.dev.todo_list">
    <application
-        android:label="war_app"
+        android:label="todo_list"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
