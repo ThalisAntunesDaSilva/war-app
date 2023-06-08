@@ -31,7 +31,7 @@ class _TodoListPageState extends State<TodoListPage> {
                 Row(children: [
                   Expanded(
                     child: Text(
-                      'Bem-vindo(a)! Ana Lucia',
+                      'Iago Mendonça',
                       style: TextStyle(fontSize: 24.0),
                     ),
                   ),
@@ -40,181 +40,142 @@ class _TodoListPageState extends State<TodoListPage> {
                 Row(
                   children: [
                     Expanded(
-                      child: Text('Consultas recentes'),
-                    ),
-                    SizedBox(width: 8),
-                  ],
-                ),
-                SizedBox(height: 16),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFF6295E2),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Row(
-                          children: [
-                            Image(
-                              image: AssetImage('assets/images/image-dra.png'),
-                            ),
-                            SizedBox(width: 10),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Dr. Ana Lucia',
-                                  style: TextStyle(
-                                      fontSize: 24.0, color: Colors.white),
-                                ),
-                                Text(
-                                  'Limpeza',
-                                  style: TextStyle(
-                                      fontSize: 14.0, color: Colors.white),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 16),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.calendar_month,
-                                  color: Colors.white,
-                                  size: 24.0,
-                                  semanticLabel:
-                                      'Text to announce in accessibility modes',
-                                ),
-                                SizedBox(width: 10),
-                                Text(
-                                  '23 Mar',
-                                  style: TextStyle(
-                                      fontSize: 14.0, color: Colors.white),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.access_time_outlined,
-                                  color: Colors.white,
-                                  size: 24.0,
-                                  semanticLabel:
-                                      'Text to announce in accessibility modes',
-                                ),
-                                SizedBox(width: 10),
-                                Text(
-                                  '16:00',
-                                  style: TextStyle(
-                                      fontSize: 14.0, color: Colors.white),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(height: 16),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFFFF6C52),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Row(
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Histórico',
-                                      style: TextStyle(
-                                          fontSize: 24.0, color: Colors.white),
-                                    ),
-                                    Text(
-                                      'Veja suas consultas anteriores',
-                                      style: TextStyle(
-                                          fontSize: 14.0, color: Colors.white),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(width: 10),
-                                Image(
-                                  image: AssetImage(
-                                      'assets/images/icon-button-historic.png'),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 10),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(height: 16),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFF66CA98),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Receba recompensas',
-                                  style: TextStyle(
-                                      fontSize: 24.0, color: Colors.white),
-                                ),
-                                Text(
-                                  'Indique um amigo e receba recompensas',
-                                  style: TextStyle(
-                                      fontSize: 14.0, color: Colors.white),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 35),
-                      ],
-                    ),
-                  ),
-                ),
-                Row(
-                  children: [
-                    SizedBox(height: 45),
-                    Expanded(
                       child: Text(
-                        'Categorias de Atendimento',
-                        style: TextStyle(fontSize: 18.0),
+                        '200 pts',
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                     SizedBox(width: 8),
                   ],
+                ),
+                SizedBox(height: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF6295E2),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/register');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Indicações',
+                                  style: TextStyle(
+                                      fontSize: 20.0, color: Colors.white),
+                                ),
+                                Text(
+                                  '+ 20 Indicações consolidadas',
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                                width:
+                                    40), // Adiciona um espaço de 10 de largura
+                            Image(
+                              image: AssetImage('assets/images/amigos.png'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFFFF6C52),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/register');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Indique uma pessoa',
+                                  style: TextStyle(
+                                      fontSize: 20.0, color: Colors.white),
+                                ),
+                                Text(
+                                  'E receba recompensas',
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                                width:
+                                    20), // Adiciona um espaço de 10 de largura
+                            Image(
+                              image: AssetImage('assets/images/galera.png'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF66CA98),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/register');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(5, 20, 5, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Recompensas',
+                                  style: TextStyle(
+                                      fontSize: 20.0, color: Colors.white),
+                                ),
+                                Text(
+                                  'Veja agora!',
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                                width:
+                                    70), // Adiciona um espaço de 10 de largura
+                            Image(
+                              image: AssetImage('assets/images/recompensa.png'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
                 Flexible(
                   child: ListView(
